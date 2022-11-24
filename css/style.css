@@ -1,0 +1,96 @@
+/* reset */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* styles */
+:root {
+    --bp-xs: 380px;
+    --bp-sm: 430px;
+}
+
+/* styling xs */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar > a {
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+
+}
+
+.navbar .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navbar .brand i{
+    font-size: 1.7rem;
+
+}
+
+.navbar .search-input {
+    display: none;
+}
+
+.navbar .search {
+    margin-left: auto;
+}
+
+.navbar .mic {
+    display: none;
+}
+
+.navbar .signin {
+    font-size: .95rem;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbar .signin i {
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+
+
+
+
+/* style sm */
+@media (min-width: 430px) {
+  .navbar .mic {
+    display: flex;
+  }
+}
+
+/* style md */
+@media (min-width: 650px) {
+    .navbar .search-input {
+        display: flex;
+        margin-left: auto;
+        width: 30%;
+    }
+    .navbar .search-input input {
+        width: 100%;
+    }
+    .navbar .search {
+        margin-left: unset;
+    }
+    .navbar .mic {
+        margin-right: auto;
+    }
+}

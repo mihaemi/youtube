@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+            integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+            integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    
+</head>
+<body>
+
+<!-- 
+    -mobile first / progressive enhancement
+
+    380 ----------- 430 -----------650 -------------- 1200----- >
+     |               |              |                   |
+     xs             sm              md                  lg
+
+     - adaptivity & responsivity
+     - UX rules compliance
+
+     TECH
+     -variables
+-->
+    <nav class="navbar"> 
+        <!-- xs -->
+        <a href="#mainDrawer" class="drawer-toggler" ><i class="fa-solid fa-bars"></i></a>
+        <a href="" class="brand"><i class="fa-brands fa-youtube"></i> YouTube</a>
+        
+        <!-- md -->
+        <label class="search-input">
+           <input type="text" placeholder="Search" />
+        </label>
+        <!-- md -->
+
+        <a href="" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+        <!-- sm -->
+        <a href="" class="mic"><i class="fa-solid fa-microphone"></i></a>
+        <!-- sm -->
+
+        <!-- dropdown -->
+        <div class="dropdown-wrapper">
+        <!-- <a href="#dropdownMenu" class="dropdown-toggle"><i class="fa-solid fa-ellipsis-vertical"></i></a> -->
+        
+        <label for="dropdownToggle">
+         <i class="fa-solid fa-ellipsis-vertical"></i>
+        </label>
+        <input type="checkbox" id="dropdownToggle"/>
+        <ul class="dropdown" id="dropdownMenu">
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Esse?</a></li>
+            <li><a href="">Expedita.</a></li>
+            <li><a href="">Esse?</a></li>
+            <li><a href="">Et!</a></li>
+ 
+        </ul>   
+        </div>     
+
+
+        <a href="" class="signin"><i class="fa-regular fa-circle-user"></i><span class="text">Sign in</span></a>
+        <!-- xs -->
+    </nav>
+
+    <div class="splide ">
+    <nav class="splide__track filters ">
+        <ul class="splide__list am-wrap">
+            <li class="splide__slide"><a href="" class="btn-explore">Explore</a></li>
+            <li class="splide__slide"><a href="" class="btn-all">All</a></li>
+            <li class="splide__slide"><a href="">Music</a></li>
+            <li class="splide__slide"><a href="">Melodramas</a></li>
+            <li class="splide__slide"><a href="">Gaming</a></li>
+            <li class="splide__slide am-nowrap"><a href="" >Animated films</a></li>
+            <li class="splide__slide"><a href="">Kygo</a></li>
+            <li class="splide__slide"><a href="">Chill-out</a></li>
+            <li class="splide__slide"><a href="">Playlists</a></li>
+            <li class="splide__slide"><a href="">Background music</a></li>
+            <li class="splide__slide"><a href="">Comedy</a></li>
+            <li class="splide__slide"><a href="">Orchestra</a></li>
+            <li class="splide__slide"><a href="">Conversation</a></li>
+            <li class="splide__slide"><a href="">Rock music</a></li>
+            <li class="splide__slide"><a href="">History</a></li>
+            <li class="splide__slide"><a href="">Debates</a></li>
+            <li class="splide__slide"><a href="">Cars</a></li>
+            <li class="splide__slide"><a href="">Nature</a></li>
+            <li class="splide__slide"><a href="">Trucks</a></li>
+            <li class="splide__slide"><a href="">Recently uploaded</a></li>
+        </ul>
+
+    </nav>
+    </div>
+
+    <nav class="drawer" id="mainDrawer">
+        <ul>
+            <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href=""><i class="fa-solid fa-bolt"></i> Shorts</a></li>
+            <li><a href=""><i class="fa-solid fa-layer-group"></i> Subscriptions</a></li>
+            <li class="divider"></li>
+            <li><a href=""><i class="fa-regular fa-square-caret-right"></i> Library</a></li>
+            <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+        <div class="grid-content">
+            <div class="cont content-1">
+                <img src="images/img1.jpg" alt="img1">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+            </div>
+            <div class="cont content-2">
+                <img src="images/img2.jpg" alt="img2">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+            </div>
+            <div class=" cont content-3">
+                <img src="images/img3.jpg" alt="img3">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+            </div>
+            <div class=" cont content-4">
+                <img src="images/img4.jpg" alt="img4">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+            </div>
+            <div class=" cont content-5">
+                <img src="images/img5.jpg" alt="img5">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+            </div>
+            <div class=" cont content-6">
+                <img src="images/img6.jpg" alt="img6">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+            </div>
+            <div class="cont content-7">
+                <img src="images/img7.jpg" alt="img7">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+            </div>
+            <div class="cont content-8">
+                <img src="images/img8.jpg" alt="img8">
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati.</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- 
+HW1: forbid the line wrap
+style the carousel
+
+
+
+
+ -->
